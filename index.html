@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+  <title>Data Breaches - DV Project</title>
+  <meta charset="utf-8">
+  <script src='https://d3js.org/d3.v5.min.js'></script>
+  <style>
+    body {
+      font-family: monospace;
+      font-size: 20px;
+      background-color: #37425b;
+      color: white;
+    }
+
+    .legend {
+        font-size: 16px;
+        font-weight: bold;
+        text-anchor: middle;
+    }
+
+    .circle {
+      background-color: #37425b;
+      height: 50;
+      width: 50;
+    }
+
+    /* Adding for border and stuff, Don't delete blindly */
+    .ultra_legend {
+      background-color: #3F4C68;
+      border: double 2px white;
+      z-index: 9;
+      height: 40%;
+      width: 20%;
+      position: absolute;
+    }
+
+    .grid line {
+      stroke: rgb(160, 160, 160);
+      stroke-opacity: 0.5;
+    }
+
+    .input_two {
+      font-family: monospace;
+      text-align: left;
+      background-color: #37425b; 
+      color: white;
+      border: 0px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .pie {
+      margin: 20px;
+    }
+
+    .pie text {
+      font-family: "Verdana";
+      fill: #888;
+    }
+
+    .pie .name-text{
+      font-size: 1em;
+    }
+
+    .pie .value-text{
+      font-size: 3em;
+    }
+  </style>
+</head>
+
+<body>
+  <p style="text-align: center; color: white;"> Data Breaches in Top Tech Companies </p>
+  <!-- <p style="text-align: center;">
+    <a href="https://github.com/surajkhamkar02/surajkhamkar02.github.io/blob/main/Video%20Demo/video1193767733.mp4" style="text-align: center; color: white;">Project Demo Link</a>
+  </p> -->
+  <div>
+    <div>
+      <div style="float: left;">
+        <div class="ultra_legend">
+          <p style="text-align: center">Hacking methods</p>
+          <svg id="legend" style="height: 250;"></svg>
+        </div>
+        <div id="content">
+          <svg width="100vw" height="300">
+            <g transform="translate(400, 180)"></g>
+          </svg>
+          <p style="text-align: center; color: white;">Click on year's</p>
+        </div>
+        <!--<div style="text-align: center;">
+          <input id="result" type="text" name="result" value="2018" class="input_two" style="text-align: center;">
+          <input id="slider" type="range" name="points" min="2017" max="2022" value=2018 style="width: 100%;">
+        </div>-->
+      </div>
+    </div>
+    <script src="v1_script.js"></script>
+    <div>
+      <div style="float: left;">
+        <div id="viz3"></div>
+        <script src="v3_script.js"></script>
+      </div>
+      <div style="float: right;">
+        <div id="viz4" style="float: right;"></div>
+      </div>
+    </div>
+  </div>
+</body>
